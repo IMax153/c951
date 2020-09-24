@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>HI ^</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+  
+    <category>
+        <pattern>HEY ^</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HELLO ^</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+  
+    <category>
+        <pattern>GOOD MORNING ^</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>GOOD AFTERNOON ^</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>GOOD EVENING ^</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>GOOD DAY ^</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+  
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hello, I am CALICO, WGU University’s virtual career advisor for computer science students! 
+            <br/>
+            <br/>
+            I can provide you with information about the top careers for computer science students after graduation. 
+            <br/>
+            <br/>
+            I can also recommend careers for you based upon your interests! Would you like to:
+            <reply>
+                <text>Learn About Computer Science Careers</text>
+                 <postback>CAREERS</postback>
+            </reply>
+            <reply>
+                 <text>Get a Career Recommendation</text>
+                 <postback>RECOMMENDATION</postback>
+            </reply>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ SOFTWARE ^</pattern>
+        <template><srai>SOFTWARE DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SOFTWARE DEVELOPER ^</pattern>
+        <template><srai>SOFTWARE DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SOFTWARE DEVELOPER</pattern>
+        <template>
+            It sounds like you might be interested in a career as a Software
+            Developer.
+            <br/>
+            <br/>
+            Is that correct?
+            <reply>
+                <text>Yes</text>
+                <postback>SOFTWARE DEVELOPER INFO</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>CAREERS</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SOFTWARE DEVELOPER INFO</pattern>
+        <template>
+            Software developers are the creative minds behind software programs, 
+            and they have the technical skills to build those programs or to oversee 
+            their creation by a team. 
+            <br/>
+            <br/>
+            They create software that enables users to 
+            perform specific tasks on computer devices.
+            <br/>
+            <br/>
+            You may benefit from setting up an appointment with a career advisor.
+            Jane Doe is one of our career advisors who specializes in advising 
+            students with an interest in software development.
+            <br/>
+            <br/>
+            For more information, check out the following resources:
+            <ul>
+                <li>
+                    <link>
+                        <text>U.S. News and World Report</text>
+                        <url>https://money.usnews.com/careers/best-jobs/software-developer</url>
+                    </link>        
+                </li>
+                <li>
+                    <link>
+                        <text>ComputerScience.org</text>
+                        <url>https://www.computerscience.org/careers/software-developer/</url>
+                    </link>   
+                </li>
+            </ul>
+        </template>
+    </category>
+</aiml>

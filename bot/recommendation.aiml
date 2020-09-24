@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>RECOMMENDATION</pattern>
+        <template>
+            <random>
+                <li>
+                    Do you enjoy designing, developing, and testing software applications 
+                    to meet a given client's needs?
+                    <reply>
+                        <text>Yes</text>
+                        <postback>SOFTWARE INTEREST</postback>
+                    </reply>
+                    <reply>
+                        <text>No</text>
+                        <postback>DATA INTEREST</postback>
+                    </reply>
+                </li>
+                <li>
+                    Do you enjoy working with data and designing systems to handle
+                    processing of vast amounts of data?
+                    <reply>
+                        <text>YES</text>
+                        <postback>DATA INTEREST</postback>
+                    </reply>
+                    <reply>
+                        <text>No</text>
+                        <postback>IT INTEREST</postback>
+                    </reply>
+                </li>
+                <li>
+                    Do you enjoy managing and coordinating various information 
+                    systems as well as navigating the interplay between various
+                    IT professionals?
+                    <reply>
+                        <text>Yes</text>
+                        <postback>IT INTEREST</postback>
+                    </reply>
+                    <reply>
+                        <text>No</text>
+                        <postback>DATA INTEREST</postback>
+                    </reply>
+                </li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SOFTWARE INTEREST</pattern>
+        <template>
+            <random>
+                <li>
+                    Do you enjoy visualizing and interacting with the software 
+                    that you design and build?
+                    <reply>
+                        <text>Yes</text>
+                        <postback>WEB DEVELOPER</postback>
+                    </reply>
+                    <reply>
+                        <text>No</text>
+                        <postback>SOFTWARE DEVELOPER</postback>
+                    </reply>
+                </li>
+                <li>
+                    Do you enjoy building enterprise-grade desktop applications
+                    or applications designed for use within machines?
+                    <reply>
+                        <text>Yes</text>
+                        <postback>SOFTWARE DEVELOPER</postback>
+                    </reply>
+                    <reply>
+                        <text>No</text>
+                        <postback>WEB DEVELOPER</postback>
+                    </reply>
+                </li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATA INTEREST</pattern>
+        <template>
+            <random>
+                <li>
+                    <reply>
+                        Do you enjoy designing databases and writing complex 
+                        SQL queries to enable advanced data processing and 
+                        data extraction?
+                        <text>Yes</text>
+                        <postback>DATABASE ADMINISTRATOR</postback>
+                    </reply>
+                    <reply>
+                        <text>No</text>
+                        <postback>INFOSEC ANALYST</postback>
+                    </reply>
+                </li>
+                <li>
+                    Do you enjoy working to secure enterprise systems and networks
+                    from cyberattacks and other security threats?
+                    <reply>
+                        <text>Yes</text>
+                        <postback>INFOSEC ANALYST</postback>
+                    </reply>
+                    <reply>
+                        <text>No</text>
+                        <postback>DATABASE ADMINISTRATOR</postback>
+                    </reply>
+                </li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>IT INTEREST</pattern>
+        <template>
+            <random>
+                <li>
+                    Do you enjoy working to ensure effective operation of all 
+                    computer systems and related applications, hardware, and 
+                    software within an organization?
+                    <reply>
+                        <text>Yes</text>
+                        <postback>IT MANAGER</postback>
+                    </reply>
+                    <reply>
+                        <text>No</text>
+                        <postback>INFOSEC ANALYST</postback>
+                    </reply>
+                </li>
+                <li>
+                    Do you enjoy working to secure enterprise systems and networks
+                    from cyberattacks and other security threats?                    
+                    <reply>
+                        <text>Yes</text>
+                        <postback>INFOSEC ANALYST</postback>
+                    </reply>
+                    <reply>
+                        <text>No</text>
+                        <postback>IT MANAGER</postback>
+                    </reply>
+                </li>
+            </random>
+        </template>
+    </category>
+</aiml>

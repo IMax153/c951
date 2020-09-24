@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>CAREERS</pattern>
+        <template>
+            Please select a career that you would like to learn more about.
+            <button>
+                <text>Software Developer</text>
+                <postback>SOFTWARE DEVELOPER INFO</postback>
+            </button>
+            <button>
+                <text>Information Technology Manager</text>
+                <postback>IT MANAGER INFO</postback>
+            </button>
+            <button>
+                <text>Web Developer</text>
+                <postback>WEB DEVELOPER INFO</postback>
+            </button>
+            <button>
+                <text>Database Administrator</text>
+                <postback>DATABASE ADMINISTRATOR INFO</postback>
+            </button>
+            <button>
+                <text>Information Security Analyst</text>
+                <postback>INFOSEC ANALYST INFO</postback>
+            </button>
+        </template>
+    </category>
+</aiml>

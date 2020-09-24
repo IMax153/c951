@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ info sec ^</pattern>
+        <template><srai>INFOSEC ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ cyber attack ^</pattern>
+        <template><srai>INFOSEC ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ cyberattack ^</pattern>
+        <template><srai>INFOSEC ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ infosec ^</pattern>
+        <template><srai>INFOSEC ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ security ^</pattern>
+        <template><srai>INFOSEC ANALYST</srai></template>
+    </category>
+    
+        <category>
+        <pattern>^ information security ^</pattern>
+        <template><srai>INFOSEC ANALYST</srai></template>
+    </category>
+    
+    <category>
+        <pattern>INFOSEC ANALYST</pattern>
+        <template>
+            It sounds like you might be interested in a career as an Information
+            Security Analyst.
+            <br/>
+            <br/>
+            Is that correct?
+            <reply>
+                <text>Yes</text>
+                <postback>INFOSEC ANALYST INFO</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>CAREERS</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>INFOSEC ANALYST INFO</pattern>
+        <template>
+            Information security analysts are the gatekeepers or security guards 
+            of information systems. These professionals plan and execute security 
+            measures to shield an organization's computer systems and networks 
+            from infiltration and cyberattacks.
+            <br/>
+            <br/>
+            They prevent, monitor and respond to data breaches and cyberattacks, 
+            which are becoming more common.
+            <br/>
+            <br/>
+            You may benefit from setting up an appointment with a career advisor.
+            Bob Doe is one of our career advisors who specializes in advising 
+            students with an interest in information security.
+            <br/>
+            <br/>
+            For more information, check out the following resources:
+            <ul>
+                <li>
+                    <link>
+                        <text>U.S. News and World Report</text>
+                        <url>https://money.usnews.com/careers/best-jobs/information-security-analyst</url>
+                    </link>                 
+                </li>
+                <li>
+                    <link>
+                        <text>ComputerScience.org</text>
+                        <url>https://www.computerscience.org/careers/information-security-analyst/</url>
+                    </link>      
+                </li>
+            </ul>
+        </template>
+    </category>
+</aiml>

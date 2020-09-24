@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>*</pattern>
+        <template>
+            I am sorry, I did not understand that. Would you like to:
+            <reply>
+                <text>Learn About Computer Science Careers</text>
+                 <postback>CAREERS</postback>
+            </reply>
+            <reply>
+                 <text>Get a Career Recommendation</text>
+                 <postback>RECOMMENDATION</postback>
+            </reply>
+        </template>
+    </category>
+</aiml>

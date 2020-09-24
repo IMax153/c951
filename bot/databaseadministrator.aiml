@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ DATABASE ^</pattern>
+        <template><srai>DATABASE ADMINISTRATOR</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ DATA BASE ^</pattern>
+        <template><srai>DATABASE ADMINISTRATOR</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SQL ^</pattern>
+        <template><srai>DATABASE ADMINISTRATOR</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ DATABASE ADMINISTRATOR ^</pattern>
+        <template><srai>DATABASE ADMINISTRATOR</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ DBA ^</pattern>
+        <template><srai>DATABASE ADMINISTRATOR</srai></template>
+    </category>
+    
+    <category>
+        <pattern>DATABASE ADMINISTRATOR</pattern>
+        <template>
+            It sounds like you might be interested in a career as a Database
+            Administrator.
+            <br/>
+            <br/>
+            Is that correct?
+            <reply>
+                <text>Yes</text>
+                <postback>DATABASE ADMINISTRATOR INFO</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>CAREERS</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATABASE ADMINISTRATOR INFO</pattern>
+        <template>
+            Database administrators (DBAs) work with technology, using specialized 
+            types of software to store and organize a company's data. This could 
+            include a variety of information, from confidential financial numbers, 
+            to payroll data, to customer shipping records.
+            <br/>
+            <br/>
+            A DBA makes sure that data is available to users, and that it's kept 
+            secure from unauthorized access or accidental loss or corruption.
+            <br/>
+            <br/>
+            You may benefit from setting up an appointment with a career advisor.
+            Jack Doe is one of our career advisors who specializes in advising 
+            students with an interest in database administration.
+            <br/>
+            <br/>
+            For more information, check out the following resources:
+            <ul>
+                <li>
+                    <link>
+                        <text>U.S. News and World Report</text>
+                        <url>https://money.usnews.com/careers/best-jobs/database-administrator</url>
+                    </link>                 
+                </li>
+                <li>
+                    <link>
+                        <text>ComputerScience.org</text>
+                        <url>https://www.computerscience.org/careers/database-administrator/</url>
+                    </link>      
+                </li>
+            </ul>
+        </template>
+    </category>
+</aiml>

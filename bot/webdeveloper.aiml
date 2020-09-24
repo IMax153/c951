@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ WEB ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SITE ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ SITES ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WEBSITE ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WEB SITE ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WEBPAGE ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WEB PAGE ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WEB DEVELOPER ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WEBDEV ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WEB DEV ^</pattern>
+        <template><srai>WEB DEVELOPER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WEB DEVELOPER</pattern>
+        <template>
+            It sounds like you might be interested in a career as a Web
+            Developer.
+            <br/>
+            <br/>
+            Is that correct?
+            <reply>
+                <text>Yes</text>
+                <postback>WEB DEVELOPER INFO</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>CAREERS</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WEB DEVELOPER INFO</pattern>
+        <template>
+            A web developer is responsible for the coding, design and layout of 
+            a website according to an individual or company's specifications. 
+            A certain level of skill in design as well as computer programming is 
+            necessary.
+            <br/>
+            <br/>
+            Web developers strive to create visually appealing websites that 
+            feature user-friendly design and clear navigation.
+            <br/>
+            <br/>
+            You may benefit from setting up an appointment with a career advisor.
+            John Doe is one of our career advisors who specializes in advising 
+            students with an interest in web development.
+            <br/>
+            <br/>
+            For more information, check out the following resources:
+            <ul>
+                <li>
+                    <link>
+                        <text>U.S. News and World Report</text>
+                        <url>https://money.usnews.com/careers/best-jobs/web-developer</url>
+                    </link>                 
+                </li>
+                <li>
+                    <link>
+                        <text>ComputerScience.org</text>
+                        <url>https://www.computerscience.org/careers/web-developer/</url>
+                    </link>      
+                </li>
+            </ul>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>^ info tech ^</pattern>
+        <template><srai>IT MANAGER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ information systems ^</pattern>
+        <template><srai>IT MANAGER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ supervisor ^</pattern>
+        <template><srai>IT MANAGER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ information technology ^</pattern>
+        <template><srai>IT MANAGER</srai></template>
+    </category>
+    
+    <category>
+        <pattern>IT MANAGER</pattern>
+        <template>
+            It sounds like you might be interested in a career as an Information
+            Technology Manager.
+            <br/>
+            <br/>
+            Is that correct?
+            <reply>
+                <text>Yes</text>
+                <postback>IT MANAGER INFO</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>CAREERS</postback>
+            </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>IT MANAGER INFO</pattern>
+        <template>
+            An information technology (IT) Manager, also known as an IT supervisor 
+            or an information systems manager, is responsible for the supervision, 
+            implementation and maintenance of a company’s computing needs. 
+            <br/>
+            <br/>
+            You will ensure the secure and effective operation of all computer systems, 
+            related applications, hardware, and software used within a company.
+            <br/>
+            <br/>
+            You may benefit from setting up an appointment with a career advisor.
+            Susan Doe is one of our career advisors who specializes in advising 
+            students with an interest in information technology management.
+            <br/>
+            <br/>
+            For more information, check out the following resources:
+            <ul>
+                <li>
+                    <link>
+                        <text>U.S. News and World Report</text>
+                        <url>https://money.usnews.com/careers/best-jobs/it-manager</url>
+                    </link>                 
+                </li>
+                <li>
+                    <link>
+                        <text>ComputerScience.org</text>
+                        <url>https://www.computerscience.org/careers/information-technology-architect/</url>
+                    </link>      
+                </li>
+            </ul>
+        </template>
+    </category>
+</aiml>
